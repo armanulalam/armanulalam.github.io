@@ -17,26 +17,6 @@
     box-sizing: border-box;
 }
 
-/* Base font size for rem units */
-html {
-    font-size: 16px; /* 1rem = 16px */
-  }
-  
-  /* Use these relative units: */
-  .container {
-    width: 90%; /* Fluid width */
-    max-width: 1200px; /* Max width for large screens */
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 2.5rem; /* Scales with root font size */
-  }
-  
-  .btn {
-    padding: 0.75rem 1.5rem; /* Relative padding */
-  }
-
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
@@ -44,21 +24,12 @@ body {
     overflow-x: hidden;
 }
 
-/* Base font scaling */
-body {
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Min: 16px, Preferred: 2% of viewport, Max: 19.2px */
-  }
-  
-  h1 {
-    font-size: clamp(2rem, 5vw, 3rem); /* Scales between 32px and 48px */
-  }
-
-/* .container {
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-} */
+}
 
 a {
     text-decoration: none;
@@ -147,31 +118,9 @@ nav .container {
 }
 
 .nav-links {
-    /* display: flex; */
+    display: flex;
     list-style: none;
 }
-/* Default (mobile) styles first */
-.nav-links {
-    display: none;
-  }
-  
-  /* Tablet (768px and up) */
-  @media (min-width: 768px) {
-    .nav-links {
-      display: flex;
-    }
-    
-    .hero-content {
-      padding-right: 2rem;
-    }
-  }
-  
-  /* Desktop (1024px and up) */
-  @media (min-width: 1024px) {
-    .container {
-      width: 85%;
-    }
-  }
 
 .nav-links li {
     margin-left: 30px;
@@ -284,18 +233,6 @@ nav .container {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     animation: float 3s ease-in-out infinite;
 }
-/* Buttons/links should be at least 48x48px for touch */
-.btn {
-    min-width: 48px;
-    min-height: 48px;
-    padding: 0.75rem 1.5rem;
-  }
-  
-  /* Prevent text size adjustment on mobile */
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-  }
 
 @keyframes float {
     0% {
@@ -446,16 +383,11 @@ nav .container {
 }
 
 /* Projects Section */
-/* .projects-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
-} */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem; /* Relative gap */
-  }
+}
 
 .project-card {
     background: white;
