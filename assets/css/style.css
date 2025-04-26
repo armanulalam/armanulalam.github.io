@@ -847,7 +847,7 @@ footer .social-links a:hover {
     }
 }
 /* Media Queries - Mobile First Approach */
-@media (min-width: 576px) {
+@media (min-width: 320px) {
     .projects-grid,
     .blog-posts {
         grid-template-columns: repeat(2, 1fr);
