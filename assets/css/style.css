@@ -846,3 +846,50 @@ footer .social-links a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* Media Queries - Mobile First Approach */
+@media (min-width: 576px) {
+    .projects-grid,
+    .blog-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero .container {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .hero-content {
+        padding-right: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .projects-grid,
+    .blog-posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+}
