@@ -876,15 +876,6 @@ footer .social-links a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .hero .container {
-        flex-direction: row;
-        text-align: left;
-    }
-    
-    .hero-content {
-        padding-right: 2rem;
-        margin-bottom: 0;
-    }
     
 }
 
