@@ -817,15 +817,6 @@ footer .social-links a:hover {
     .hero-content h2 {
         font-size: 1.5rem;
     }
-    .hero .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 50px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -855,15 +846,6 @@ footer .social-links a:hover {
         grid-template-columns: 1fr;
     }
 
-    .hero .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 50px;
-    }
 }
 /* Media Queries - Mobile First Approach */
 @media (min-width: 576px) {
