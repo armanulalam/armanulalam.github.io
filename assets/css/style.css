@@ -888,3 +888,92 @@ footer .social-links a:hover {
     }
     
 }
+
+
+
+
+
+
+
+
+
+/* Add these styles to your existing media queries */
+@media (max-width: 768px) {
+    .hero-content h5 {
+        font-size: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem !important; /* Override inline style */
+    }
+    
+    .hero-content h5:last-child {
+        font-size: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h5 {
+        font-size: 0.9rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem !important; /* Override inline style */
+        margin: 10px 0;
+    }
+    
+    .hero-content h5:last-child {
+        font-size: 0.9rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+    
+    .hero .container {
+        padding: 20px 15px;
+    }
+    
+    .hero-image img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+}
+
+/* Hero Section Base Styles */
+.hero-content {
+    padding-right: 50px;
+}
+
+.hero-greeting {
+    color: black;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.hero-name {
+    color: rgb(213, 54, 245);
+    font-weight: bold;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.hero-title {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.hero-specialization {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
