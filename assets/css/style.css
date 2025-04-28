@@ -978,56 +978,104 @@ footer .social-links a:hover {
     margin-top: 20px;
 }
 
-/* Specific fix  */
-@media (max-width: 720px) and (max-height: 1520px) and (orientation: portrait) {
+/* Base hero styles */
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-greeting {
+    color: black;
+    font-weight: 500;
+    font-size: medium;
+    margin-bottom: 10px;
+    display: block; /* Ensures it's always visible */
+  }
+  
+  .hero-name {
+    color: rgb(213, 54, 245);
+    font-weight: bold;
+    font-size: 35px;
+    margin: 15px 0;
+  }
+  
+  .hero-title {
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .hero-specialization {
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Redmi 8A specific fixes */
+  @media (max-width: 720px) and (max-height: 1520px) and (orientation: portrait) {
     .hero .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 15px;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 15px;
+      gap: 20px;
     }
-
+  
     .hero-content {
-        padding-right: 0;
-        margin-bottom: 30px;
+      padding-right: 0;
+      margin-bottom: 20px;
+      order: 2;
     }
-
-    .hero-content h5 {
-        /* font-size: 1rem;
-        margin-bottom: 5px; */
-        font-size: 2rem !important; /* Overrides inline style */
-        margin: 10px 0;
-        line-height: 1.2;
+  
+    .hero-image {
+      order: 1;
+      margin-bottom: 20px;
     }
-
-    .hero-content h2 {
-        font-size: 2rem !important; /* Overrides inline style */
-        margin: 10px 0;
-        line-height: 1.2;
+  
+    .hero-greeting {
+      font-size: 1.2rem !important;
+      margin-bottom: 5px;
+      color: black !important;
     }
-
-    .hero-content h5:last-child {
-        font-size: 1rem;
-        margin-bottom: 35px;
+  
+    .hero-name {
+      font-size: 2rem !important;
+      margin: 5px 0 10px 0;
+      line-height: 1.2;
     }
-
-    .hero-content p {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
+  
+    .hero-title {
+      font-size: 1rem;
+      margin-bottom: 15px;
     }
-
+  
+    .hero-specialization {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+  
     .hero-image img {
-        max-width: 250px;
-        margin: 0 auto;
+      max-width: 200px;
+      margin: 0 auto;
     }
-
+  
     .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
-
+  
     .btn {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
     }
-}
+  }
