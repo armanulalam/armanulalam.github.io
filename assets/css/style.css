@@ -1021,7 +1021,7 @@ footer .social-links a:hover {
     margin-top: 20px;
   }
   
-  /* Redmi 8A specific fixes */
+
   @media (max-width: 720px) and (max-height: 1520px) and (orientation: portrait) {
     .hero .container {
       flex-direction: column;
@@ -1042,7 +1042,8 @@ footer .social-links a:hover {
     }
   
     .hero-greeting {
-      font-size: 1.2rem !important;
+      font-size: medium !important;
+      font-weight:500;
       margin-bottom: 5px;
       color: black !important;
     }
